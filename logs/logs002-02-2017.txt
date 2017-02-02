@@ -1,0 +1,153 @@
+coolkidscode typed : >Morning bot
+coolkidscode typed : >well.. that was quick
+coolkidscode typed : >you
+coolkidscode typed : >transgender
+coolkidscode typed : >idk
+coolkidscode typed : >:D
+coolkidscode typed : !time
+coolkidscode typed : !time tutasmaster
+coolkidscode typed : !quit
+coolkidscode typed : !commands
+coolkidscode typed : !quit
+coolkidscode typed : !commands
+coolkidscode typed : !views
+coolkidscode typed : !quit
+coolkidscode typed : test
+coolkidscode typed : !time
+coolkidscode typed : !views
+coolkidscode typed : ***
+coolkidscode typed : let's try it
+coolkidscode typed : !quit
+coolkidscode typed : !points
+coolkidscode typed : !quit
+coolkidscode typed : !time
+coolkidscode typed : !points
+coolkidscode typed : !quit
+coolkidscode typed : >sup
+coolkidscode typed : !commands
+coolkidscode typed : !time
+coolkidscode typed : !points
+coolkidscode typed : !quit
+coolkidscode typed : !time
+coolkidscode typed : !points
+coolkidscode typed : !quit
+coolkidscode typed : !time
+coolkidscode typed : !points
+coolkidscode typed : !quit
+coolkidscode typed : !time
+coolkidscode typed : !points
+coolkidscode typed : !quit
+coolkidscode typed : !points
+coolkidscode typed : !points pukateiubestebott
+coolkidscode typed : WutFace
+coolkidscode typed : broken again
+coolkidscode typed : Kapap
+coolkidscode typed : !quit
+coolkidscode typed : !points pukateiubestebott
+coolkidscode typed : oh no
+coolkidscode typed : !quit
+coolkidscode typed : !points pukateiubestebott
+coolkidscode typed : !points
+coolkidscode typed : !quit
+coolkidscode typed : !points
+coolkidscode typed : !points
+coolkidscode typed : !points
+coolkidscode typed : !views
+coolkidscode typed : !time
+coolkidscode typed : !points dsadsa
+coolkidscode typed : whops
+coolkidscode typed : !quit
+coolkidscode typed : !points dasdsa
+coolkidscode typed : !commands
+coolkidscode typed : !quit
+coolkidscode typed : >how are you?
+coolkidscode typed : !type
+coolkidscode typed : !points
+coolkidscode typed : !quit
+coolkidscode typed : !points
+coolkidscode typed : !test_f
+coolkidscode typed : !test_f
+coolkidscode typed : !test_f
+coolkidscode typed : !test_f
+coolkidscode typed : l
+coolkidscode typed : noice
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+coolkidscode typed : !test_f
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+coolkidscode typed : !quit
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+phaqui typed : good morning
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+coolkidscode typed : *** twitch api
+phaqui typed : a nice thing to do
+phaqui typed : print(type(variable))
+phaqui typed : will help you move further into what's wrong
+coolkidscode typed : hm
+coolkidscode typed : tnx for the tip
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+coolkidscode typed : dict type
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+phaqui typed : then the documentation you're looking at is correct
+coolkidscode typed : i need to get the display_name somehow :(
+phaqui typed : it's difficult for me to read that
+phaqui typed : but it's in there
+coolkidscode typed : this should work
+coolkidscode typed : in my head it's working Kappa
+phaqui typed : what the *** at these lyrics... hahaha
+coolkidscode typed : !quit
+coolkidscode typed : !test_f
+coolkidscode typed : working
+coolkidscode typed : YES
+coolkidscode typed : *** yea
+coolkidscode typed : it'\s a playlist i'm playing
+coolkidscode typed : from frog leap studios
+coolkidscode typed : !time Phaqui
+coolkidscode typed : ok.. now that i got the last follower i need to make a silly lopp to check for new followers :D
+coolkidscode typed : i'm broke here
+coolkidscode typed : idk how to do that :(
+phaqui typed : you're using the twitch api to request that info?
+coolkidscode typed : yes
+phaqui typed : isn't there a limit to how often you can pull that information?
+coolkidscode typed : api.twitch.tv/kraken
+coolkidscode typed : i can pull it every minute
+coolkidscode typed : or faster
+coolkidscode typed : but i think it updates the last follower every minute or so
+coolkidscode typed : i'm not sure
+coolkidscode typed : basically i want to send a message in chat when i get a new follower
+coolkidscode typed : atm i'm using twitch alerts
+coolkidscode typed : and i want to use twitch alerts and my own bot at the same time
+phaqui typed : I'm not familiar with htat
+phaqui typed : but I saw that there were requests to get followers, maximum 100 per time
+coolkidscode typed : 100 followers?
+phaqui typed : and to get the latest, they had a sort-key you could pass in
+phaqui typed : so, sortby: created, and direction: asc
+coolkidscode typed : ?/follows?limit=1
+coolkidscode typed : i use this
+coolkidscode typed : to get the last follower
+phaqui typed : with maybe even limit set to how many of the latest you want to pull
+phaqui typed : oh, yeah, could be direction: desc
+phaqui typed : I always mix those up
+coolkidscode typed : duck it..
+coolkidscode typed : i'll finish it later
+coolkidscode typed : !views
+coolkidscode typed : tnx for watching Kappa
+coolkidscode typed : cya later
+coolkidscode typed : >bye
+coolkidscode typed : WutFace
+coolkidscode typed : !quit

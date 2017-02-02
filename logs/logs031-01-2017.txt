@@ -1,0 +1,30 @@
+pukateiubeste typed : !views
+pukateiubeste typed : !views
+pukateiubeste typed : !views
+pukateiubeste typed : !views
+pukateiubeste typed : it's instant Kappa
+pukateiubeste typed : !quit
+pukateiubeste typed : !views
+pukateiubeste typed : !views
+pukateiubeste typed : Kappa
+tutasmaster typed : what are you sending to twitch
+tutasmaster typed : i am doing NICK tutasmaster
+tutasmaster typed : PASS oauth:oasdfijhdif
+pukateiubeste typed : wait
+tutasmaster typed : JOIN #pukateiubestebott
+tutasmaster typed : by irc
+tutasmaster typed : what are you sending
+pukateiubeste typed : https://github.com/pukapy/AnnoyTwitch/blob/master/Settings.py
+pukateiubeste typed : this is the "engine" i'm using
+pukateiubeste typed : to connect to twitch
+pukateiubeste typed : https://github.com/pukapy/AnnoyTwitch/blob/master/Socket.py
+tutasmaster typed : the missing \r
+tutasmaster typed : NOW IT WORKS
+pukateiubeste typed : Kappa
+tutasmaster typed : I made a *** irc c++ client
+tutasmaster typed : :D
+tutasmaster typed : thank you a lot puka
+pukateiubeste typed : np
+pukateiubeste typed : !views
+pukateiubeste typed : :(
+pukateiubeste typed : !quit
