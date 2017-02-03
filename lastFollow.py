@@ -7,6 +7,19 @@ import requests
 # 146634280 - coolkidscode _id
 
 
+def get_id(chnl):
+    with open('config.json', 'r') as f:
+        config = json.load(f)
+    channel = chnl
+    s = requests.session()
+    headers = {
+        "Client-ID": config['client-id']
+    }
+    p = s.get("https://api.twitch.tv/kraken/users/"+channel, headers=headers)
+    f.close()
+    pk = json.loads(p.text)
+    return pk['_id']
+
 
 def getHosts():
     try:
@@ -36,4 +49,5 @@ def newFollower():
 			x2 = x
 			print "@" + x + " Thank you very much for the follow :D Hope you enjoy the stream."
 		time.sleep(1)
-getHosts()
+#getHosts()
+#get_id()

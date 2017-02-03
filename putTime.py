@@ -37,7 +37,6 @@ def StartPoints():
             f.write(str(final_value))
             f.close()
 
-
         for i in getAllMods():
             if (os.path.isfile(points_path+i+extension) != True):
                 files = open(points_path+i+extension, "w+")

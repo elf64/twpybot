@@ -10,16 +10,21 @@ import os
 from datetime import timedelta
 from threading import Thread
 from putTime import StartTimer, StartPoints
+from lastFollow import get_id
 import json
 import requests
 import playsound
+import glob
 
-
+# Imports ^
 
 
 
 
 # Variables :-? #
+sfx_play = False
+sfx = ""
+sfx_list = []
 admin = ["pukateiubeste", "coolkidscode"]
 s = openSocket()
 joinRoom(s)
@@ -31,7 +36,18 @@ logs = open("logs/logs0"+pukastrftime+".txt", 'a')
 cb = Cleverbot('my-app')
 # End #
 
+# Get all sfx files from directory and change back to the main one #
+cwd = os.getcwd()
+os.chdir("sfx/")
+for file in glob.glob("*.mp3"):
+	print(file)
+	#file.split("/")
+	sfx_list.append(file)
+os.chdir(cwd)
+print sfx_list
+# End #
 
+# Function for a new follower #
 def newFollower():
 	x = getFollowers() # Returns the last follower of the channel
 	x2 = x
@@ -43,36 +59,58 @@ def newFollower():
 			x2 = x
 			sendMessage(s, "@" + x + " Thank you very much for the follow :D Hope you enjoy the stream.")
 		time.sleep(1)
-
+# End #
 
 # The get host thread is not working correctly #
 #
 # Not fixed!!! #
 #
+# I'm so fucking retard
+# Now it's working but it updates the host thing every 1 minute :(
+#
 def getHosts():
 	with open('config.json', 'r') as f:
 		config = json.load(f)
 	channel = config['channel']
-	s = requests.session()
+	#s = requests.session()
 	headers = {
 		"Client-ID": config['client-id']
 		}
 	f.close()
-	p = s.get("http://tmi.twitch.tv/hosts?include_logins=1&target=146634280", headers=headers)
-	pk = json.loads(p.text)
-	p2 = pk['hosts']
+	with requests.Session() as lk:
+		p = lk.get("http://tmi.twitch.tv/hosts?include_logins=1&target=146634280", headers=headers)
+		pk = json.loads(p.text)
+		p2 = pk['hosts']
+	#s.config['keep_alive'] = False
 	#sendMessage(s, p2[0]['host_display_name'] + " is now hosting the channel. x2")
 	while True:
-		p = s.get("http://tmi.twitch.tv/hosts?include_logins=1&target=146634280", headers=headers)
-		pk = json.loads(p.text)
-		p3 = pk['hosts']
-		host_user = p3[0]['host_display_name']
-		print host_user
-		sendMessage(s, " is now hosting the channel.")
+		with requests.Session() as lk:
+			p = lk.get("http://tmi.twitch.tv/hosts?include_logins=1&target=146634280", headers=headers)
+			pk = json.loads(p.text)
+			p3 = pk['hosts']
+			if (p3 != []):
+				if (p3 != p2):
+					host_user = p3[0]['host_display_name']
+					#print host_user
+					sendMessage(s, host_user + " is now hosting the channel.")
+					p2 = p3
+			if (p3 == []):
+				#print "[] - no host!"
+				pass
+
 		#p2 = pk['hosts']
 		time.sleep(1)
-
-
+#
+# Wait for sfx command #
+def waitSfx():
+	while True:
+		global sfx_play
+		if (sfx_play == True):
+			playsound.playsound('sfx/'+ sfx + '.mp3', True)
+			sfx_play = False
+		else:
+			pass
+# End #
 
 
 
@@ -84,25 +122,26 @@ try:
 	t2 = Thread(target=StartPoints)
 	t3 = Thread(target=newFollower)
 	t4 = Thread(target=getHosts)
+	t5 = Thread(target=waitSfx)
 	t.daemon = True # tnx god
 	t.start()
 	t2.daemon = True # tnx god
 	t2.start()
 	t3.daemon = True
 	t3.start()
-	#t4.daemon = True # the thread is working now.. intresting <
-	#t4.start()
+	t4.daemon = True # the thread is working now.. intresting <
+	t4.start()
+	t5.daemon = True
+	t5.start()
 	print "Thread1 started."
 	print "Thread2 started."
 	print "Thread3 started."
-	print "Thread4 not working."
+	print "Thread4 started."
+	print "Thread5 started." # Kappa
 except Exception as egg:
 	print egg
 
-	# Start main loop #
-
-#x = getFollowers() # Returns the last follower of the channel
-#x2 = x
+#	# Start main loop #   #
 
 while True:
 
@@ -142,7 +181,7 @@ while True:
 
 
 			if message == "!sfx list\r":
-				sendMessage(s, 'Sfx list: "fart"')
+				sendMessage(s, 'Sfx list: ' + str(sfx_list))
 				break
 
 
@@ -158,21 +197,29 @@ while True:
 				if (int(user_points) < 5):
 					sendMessage(s, "@" + user.lower() + " You don't have enough points to do that")
 					break
-				if (int(user_points) > 5):
-					if (final_s == "fart"):
+				if (int(user_points) >= 5):
+					if (final_s + ".mp3" in sfx_list):
 						f = open('points/'+user.lower()+'.txt', 'w')
 						final_points = int(user_points) - 5
 						f.write(str(final_points))
 						f.close()
-						playsound.playsound('sfx/fart2.mp3', True)
+						#playsound.playsound('sfx/fart2.mp3', True)
+						# Set the sfx value to True #
+						sfx = final_s
+						sfx_play = True
 						break
 					else:
-						sendMessage(s, "Sfx with name " + final_s + " was not found.")
+						sendMessage(s, "Sfx with name '" + final_s + "' was not found.")
 						break
+			# get the id of a channel #
+			if message.startswith("!id "):
+				k = message.split(" ")
+				final_s = k[1]
+				final_s = final_s.replace("\r", "")
+				sendMessage(s, "@" + user.lower() + " The _id of channel is :" + str(get_id(final_s)))
+				break
+			# Test Commands 2
 
-
-
-			# Test Commands 2 #
 			if message == "!joinrandom\r":
 				o_c = [line.rstrip() for line in open('say/random_class.txt')]
 				o_b = [line.rstrip() for line in open('say/random_builds.txt')]
@@ -213,6 +260,9 @@ while True:
 				k = message.split(" ")
 				final_s = k[1]
 				final_s = final_s.replace("\r", "")
+				if (int(k[2]) < 1):
+					sendMessage(s, "@" + user.lower() + " you can't transfer that amount of points.")
+					break
 				if (os.path.isfile('points/'+final_s.lower()+'.txt') != True):
 					sendMessage(s, "The user " + final_s.lower() + " doesn't exists in the current database.")
 					break
@@ -224,10 +274,10 @@ while True:
 					files_user = open('points/'+user.lower()+'.txt', 'r')
 					user_points = files_user.read()
 					files_user.close()
-					if (user_points < k[2]):
+					if (int(user_points) < int(k[2])):
 						sendMessage(s, "@" + user + " You don't have enough points to transfer.")
 						break
-					if (user_points > k[2]):
+					if (int(user_points) >= int(k[2])):
 						# Transfer points #
 						# First open the current user file and take out the points #
 						files_user = open('points/'+user.lower()+'.txt', 'w')
@@ -247,8 +297,6 @@ while True:
 
 						sendMessage(s, "@" + user.lower() + " added " + k[2] + " points to "
 									+ final_s.lower() + " account.")
-
-
 
 			# Give points to a player #
 			if message.startswith("!give "):
@@ -284,9 +332,6 @@ while True:
 					sendMessage(s, "Usage is !give <user> <amount>")
 					break
 
-
-
-
 			# Points command #
 			if message == "!points\r":
 				if (os.path.isfile('points/'+user.lower()+'.txt') != True):
@@ -318,9 +363,6 @@ while True:
 					f.close()
 					break
 
-
-
-
 			# Time command #
 			if message.startswith("!time "):
 				k = message.split(" ")
@@ -336,7 +378,7 @@ while True:
 					lj = f.read()
 					#print lj
 					#str(timedelta(minutes=100))
-					poop =  str(timedelta(minutes=int(lj)))
+					poop =  str(timedelta(minutes=int(lj))) # This returns 00:00:00 aka h:m:s
 					pop = poop.split(":")
 					print pop
 					#print poop
