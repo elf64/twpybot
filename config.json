@@ -1,6 +1,6 @@
 {
   "oauth": "*",
   "client-id": "*",
-  "name": "*",
+  "name": "pukateiubestebott",
   "channel": "coolkidscode"
 }

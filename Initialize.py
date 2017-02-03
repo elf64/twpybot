@@ -2,7 +2,7 @@ import string
 from Socket import sendMessage
 import random
 
-# Join the room with a random message #
+# Initialize .txt file
 def joinRoom(s):
 	readbuffer = ""
 	Loading = True

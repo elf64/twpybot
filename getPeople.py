@@ -2,7 +2,6 @@ import json
 import requests
 
 
-# Shitty code starts here #
 
 # Command that will be changed when the bot will be ready to play the game #
 def getViewersOnChannel(channel):
