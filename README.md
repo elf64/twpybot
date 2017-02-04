@@ -22,3 +22,7 @@ Ex. ">How old are you?" and the bot should respond :D
 ..* returns the number of viewers of the channel
 6. >message
 ..* Talk with the bot
+
+
+## Contributors
+    - [VoyagerPunk](https://github.com/VoyagerPunk)

@@ -1,6 +1,7 @@
 {
   "oauth": "*",
   "client-id": "*",
-  "name": "pukateiubestebott",
-  "channel": "coolkidscode"
+  "name": "lazerbeam_wixaurd",
+  "channel": "lazerbeam_wixaurd",
+  "min_points": 5
 }
