@@ -5,15 +5,20 @@ ADMIN = ('pukateibeste', 'coolkidscode')
 
 
 def get_points(user):
-    usr_points_path = path.join(POINTS_PATH, user, '.txt')
-    with open(usr_points_path, 'r') as points_file:
-        return int(points_file.read())
+    usr_points_path = path.join(POINTS_PATH, user + '.txt')
+    if path.isfile(usr_points_path):
+        with open(usr_points_path, 'r') as points_file:
+            return int(points_file.read())
+    return None
 
 
 def store_points(user, usr_points):
-    usr_points_path = path.join(POINTS_PATH, user, '.txt')
-    with open(usr_points_path, 'w') as points_file:
-        return points_file.write(str(usr_points))
+    usr_points_path = path.join(POINTS_PATH, user + '.txt')
+    if path.isfile(usr_points_path):
+        with open(usr_points_path, 'w') as points_file:
+            points_file.write(str(usr_points))
+            return usr_points
+    return None
 
 
 def msg_allowed(user, message):
