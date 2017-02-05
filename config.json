@@ -1,7 +1,0 @@
-{
-  "oauth": "*",
-  "client-id": "*",
-  "name": "lazerbeam_wixaurd",
-  "channel": "lazerbeam_wixaurd",
-  "min_points": 5
-}
