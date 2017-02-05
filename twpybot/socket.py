@@ -17,6 +17,6 @@ def open_socket():
 
 
 def send_message(s, message):
-    messageTemp = 'PRIVMSG #{} :{}'.format(CHANNEL, message)
-    s.send(messageTemp + '\r\n')
-    print('Sent: ' + messageTemp)
+    messagetemp = 'PRIVMSG #{} :{}'.format(CHANNEL, message)
+    s.send(messagetemp + '\r\n')
+    print('Sent: ' + messagetemp)

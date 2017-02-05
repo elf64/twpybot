@@ -1,26 +1,26 @@
 import string
 import random
 
-from Socket import sendMessage
+from socket import send_message
 
 
 # Initialize .txt file
-def joinRoom(s):
+def join_room(s):
     readbuffer = ''
-    Loading = True
-    while Loading:
+    loading = True
+    while loading:
         readbuffer += s.recv(1024)
         temp = string.split(readbuffer, '\n')
         readbuffer = temp.pop()
 
         for line in temp:
             print(line)
-            Loading = loadingComplete(line)
+            loading = loading_complete(line)
     with open('say/random_join.txt') as f:
-        sendMessage(s, random.choice(f.readlines()))
+        send_message(s, random.choice(f.readlines()))
 
 
-def loadingComplete(line):
+def loading_complete(line):
     if 'End of /NAMES list' in line:
         return False
     return True

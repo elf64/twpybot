@@ -1,22 +1,26 @@
-import string
+import os
 import json
+import glob
+import time
+import string
+import random
 import requests
 import playsound
-import glob
-import random
-import time
+import sound_effects
 
 from threading import Thread
-from putTime import StartTimer, StartPoints
-from lastFollow import get_id
-# unfinished
-from getPeople import getViews, getFollowers
-from Read import getUser, getMessage
-from Socket import openSocket, sendMessage
-from cleverbot import Cleverbot
-import sound_effects
+
+
+# project modules
 import usr_time
-import os
+from watch_timer import start_timer, start_points
+
+
+from utils import get_points
+from transfer import point_transfer
+from socket import open_socket, send_message
+from last_follow import get_id, get_user, get_message
+from viewers import get_views, get_followers
 
 
 # Variables :-? #
@@ -24,15 +28,13 @@ sfx_play = False
 sfx = ''
 sfx_list = []
 admin = ['pukateiubeste', 'coolkidscode']
-s = openSocket()
-msgjoinRoom(s)
+s = open_socket()
 readbuffer = ''
 gypsyBot = 'tinybattles'
 pukastrftime = time.strftime('%d-%m-%Y')
 print 'Time Test : ', pukastrftime
 logs = open('logs/logs0{}.txt'.format(pukastrftime), 'a')
-cb = Cleverbot('my-app')
-# End #
+
 
 # Get all sfx files from directory and change back to the main one #
 cwd = os.getcwd()
@@ -46,16 +48,17 @@ print sfx_list
 
 
 # Function for a new follower #
-def newFollower():
-    last_follower = getFollowers()  # Returns the last follower of the channel
+def new_follower():
+    last_follower = get_followers()  # Returns the last follower of the channel
     next_follower = last_follower
     while True:
-        last_follower = getFollowers()
+        last_follower = get_followers()
         if last_follower != next_follower:
             # do something cuz there is a new follower
             next_follower = last_follower
-            sendMessage(s, '@{} Thank you very much for the follow' +
-                        ' :D Hope you enjoy the stream.'.format(last_follower))
+            send_message(s, '@{} Thank you very much for the follow' +
+                         ' :D Hope you enjoy the stream.'
+                         .format(last_follower))
         time.sleep(1)
 # End #
 
@@ -67,7 +70,7 @@ def newFollower():
 # I'm so fucking retard
 # Now it's working but it updates the host thing every 1 minute :(
 #
-def getHosts():
+def get_hosts():
     twitch_api = 'http://tmi.twitch.tv/hosts?include_logins=1&target=146634280'
     with open('config.json', 'r') as f:
         config = json.load(f)
@@ -89,7 +92,7 @@ def getHosts():
             if p3 != []:
                 if p3 != p2:
                     host_user = p3[0]['host_display_name']
-                    sendMessage(s, host_user + ' is now hosting the channel.')
+                    send_message(s, host_user + ' is now hosting the channel.')
                     p2 = p3
             if p3 == []:
                 logs.write('no hosts found \r\n')
@@ -99,7 +102,7 @@ def getHosts():
 
 #
 # Wait for sfx command #
-def waitSfx():
+def wait_sfx():
     while True:
         global sfx_play
         if sfx_play is True:
@@ -110,11 +113,11 @@ def waitSfx():
 # ------------------------------------ #
 # Start the thread for timer #
 try:
-    t = Thread(target=StartTimer)
-    t2 = Thread(target=StartPoints)
-    t3 = Thread(target=newFollower)
-    t4 = Thread(target=getHosts)
-    t5 = Thread(target=waitSfx)
+    t = Thread(target=start_timer)
+    t2 = Thread(target=start_points)
+    t3 = Thread(target=new_follower)
+    t4 = Thread(target=get_hosts)
+    t5 = Thread(target=wait_sfx)
     t.daemon = True  # tnx god
     t.start()
     t2.daemon = True  # tnx god
@@ -144,25 +147,25 @@ while True:
             if 'PING' in line:
                 s.send('PONG tmi.twitch.tv\r\n')
                 break
-            user = getUser(line).lower()
-            message = getMessage(line)
+            user = get_user(line).lower()
+            message = get_message(line)
             log_message = '{} typed :{}'.format(user, message)
             print log_message
             logs.write(log_message + '\r\n')
 
             if message == '!time\r':
                 msg = usr_time.usr_time(user)
-                sendMessage(s, msg)
+                send_message(s, msg)
                 break
 
             # Sfx command #
             if message == '!sfx\r':
-                sendMessage(s, 'Sfx usage: type in chat' +
-                            ' !sfx <name of sfx> Ex: !sfx fart')
+                send_message(s, 'Sfx usage: type in chat' +
+                             ' !sfx <name of sfx> Ex: !sfx fart')
                 break
 
             if message == '!sfx list\r':
-                sendMessage(s, 'Sfx list: ' + str(sfx_list))
+                send_message(s, 'Sfx list: ' + str(sfx_list))
                 break
 
             if message.startswith('!sfx '):
@@ -170,14 +173,14 @@ while True:
                 sfxname = k[1]
                 sfxname = sfxname.replace('\r', '')
                 msg = sound_effects.run_sfx(user, sfxname)
-                sendMessage(s, msg)
+                send_message(s, msg)
                 break
             # get the id of a channel #
             if message.startswith('!id '):
                 k = message.split(' ')
                 channel = k[1].replace('\r', '')
                 msg = get_id(user, channel)
-                sendMessage(s, msg)
+                send_message(s, msg)
                 break
 
             if message == '!joinrandom\r':
@@ -186,27 +189,27 @@ while True:
                 r_c = random.choice(o_c)
                 r_b = random.choice(o_b)
                 r_f = r_c + r_b
-                sendMessage(s, 'join ' + r_f)
+                send_message(s, 'join ' + r_f)
                 break
             # Test Commands #
             if message == '!commands\r':
                 commands = ('!time', '!time <user>', '> message', '!views',
                             '!points', '!points <user>', '!github',
                             '!transfer <user> <amount>', '!sfx <sfx_name>')
-                sendMessage(s, '@{} Current commands are: {}'
-                            .format(user, commands))
+                send_message(s, '@{} Current commands are: {}'
+                             .format(user, commands))
                 break
 
             # Github Command #
             if message == '!github\r':
-                sendMessage(s, '@{} You can find me on github :> ' +
-                            'https://github.com/pukapy/twpybot'.format(user))
+                send_message(s, '@{} You can find me on github :> ' +
+                             'https://github.com/pukapy/twpybot'.format(user))
                 break
             # End #
 
             # parse !follow command
             if message == '!lfollow\r':
-                sendMessage(s, 'Last follower is ' + getFollowers())
+                send_message(s, 'Last follower is ' + get_followers())
                 break
             # Transfer points to a player #
             if message.startswith('!transfer '):
@@ -215,42 +218,42 @@ while True:
                 to_user = k[1]
                 to_user = to_user.replace('\r', '').lower()
                 points = k[2]
-                msg = point_transfer(user, to_user, amount)
-                sendMessage(s, msg)
+                msg = point_transfer(user, to_user, points)
+                send_message(s, msg)
                 break
 
             # Give points to a player #
             if message.startswith('!give '):
                 if user not in admin:
-                    sendMessage(s, '@{} you dont have acces to that command.'
-                                .format(user))
+                    send_message(s, '@{} you dont have acces to that command.'
+                                 .format(user))
                     break
                 k = message.split(' ')
                 final_s = k[1]
                 amount = int(k[2])
                 recipient = final_s.replace('\r', '')
                 msg = admin.give_points(recipient, amount)
-                sendMessage(s, msg)
+                send_message(s, msg)
                 break
 
             if message == '!give\r':
                 if user not in admin:
-                    sendMessage(s, '@{} you dont have acces to that command.'
-                                .format(user))
+                    send_message(s, '@{} you dont have acces to that command.'
+                                 .format(user))
                     break
-                sendMessage(s, 'Usage is !give <user> <amount>')
+                send_message(s, 'Usage is !give <user> <amount>')
                 break
 
             # Points command #
             if message == '!points\r':
                 points = get_points(user)
-                sendMessage(s, 'You have {} points. @{}'.format(points, user))
+                send_message(s, 'You have {} points. @{}'.format(points, user))
                 break
             # End #
 
             if message.startswith('!points '):
                 points = get_points(user)
-                sendMessage(s, 'You have {} points. @{}'.format(points, user))
+                send_message(s, 'You have {} points. @{}'.format(points, user))
                 break
 
             # Time command #
@@ -259,32 +262,32 @@ while True:
                 final_s = k[1]
                 usr = final_s.replace('\r', '')
                 msg = usr_time(usr)
-                sendMessage(s, msg)
+                send_message(s, msg)
                 break
             is_http_https = 'http://' in message or 'https://' in message
             is_http_msg = is_http_https or 'www.' in message
             if is_http_msg:
                 if user not in admin:
-                    sendMessage(s, '.timeout {} 10'.format(user))
-                    sendMessage(s, 'No links allowed!!! @' + user)
+                    send_message(s, '.timeout {} 10'.format(user))
+                    send_message(s, 'No links allowed!!! @' + user)
                     break
                 break
 
             # parse messages
             if message == '!type\r':
-                sendMessage(s, 'The type of message is ' + str(type(message)))
+                send_message(s, 'The type of message is ' + str(type(message)))
                 break
             if message == '!views\r':
-                sendMessage(s, getViews())
+                send_message(s, get_views())
                 break
             if message == '!test\r':
-                sendMessage(s, 'test')
+                send_message(s, 'test')
                 break
             if message == '!quit\r':
                 if user not in admin:
-                    sendMessage(s, '@{} you dont have acces to that command.'
-                                .format(user))
+                    send_message(s, '@{} you dont have acces to that command.'
+                                 .format(user))
                     break
-                sendMessage(s, 'Bye <3 Kappa')
+                send_message(s, 'Bye <3 Kappa')
                 quit('\n\n\n\r\n BYE ~~~~')
             # End #
