@@ -1,698 +1,0 @@
-coolkidscode typed : >Morning bot
-coolkidscode typed : >well.. that was quick
-coolkidscode typed : >you
-coolkidscode typed : >transgender
-coolkidscode typed : >idk
-coolkidscode typed : >:D
-coolkidscode typed : !time
-coolkidscode typed : !time tutasmaster
-coolkidscode typed : !quit
-coolkidscode typed : !commands
-coolkidscode typed : !quit
-coolkidscode typed : !commands
-coolkidscode typed : !views
-coolkidscode typed : !quit
-coolkidscode typed : test
-coolkidscode typed : !time
-coolkidscode typed : !views
-coolkidscode typed : ***
-coolkidscode typed : let's try it
-coolkidscode typed : !quit
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !time
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : >sup
-coolkidscode typed : !commands
-coolkidscode typed : !time
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !time
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !time
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !time
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !points
-coolkidscode typed : !points pukateiubestebott
-coolkidscode typed : WutFace
-coolkidscode typed : broken again
-coolkidscode typed : Kapap
-coolkidscode typed : !quit
-coolkidscode typed : !points pukateiubestebott
-coolkidscode typed : oh no
-coolkidscode typed : !quit
-coolkidscode typed : !points pukateiubestebott
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !points
-coolkidscode typed : !points
-coolkidscode typed : !points
-coolkidscode typed : !views
-coolkidscode typed : !time
-coolkidscode typed : !points dsadsa
-coolkidscode typed : whops
-coolkidscode typed : !quit
-coolkidscode typed : !points dasdsa
-coolkidscode typed : !commands
-coolkidscode typed : !quit
-coolkidscode typed : >how are you?
-coolkidscode typed : !type
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !points
-coolkidscode typed : !test_f
-coolkidscode typed : !test_f
-coolkidscode typed : !test_f
-coolkidscode typed : !test_f
-coolkidscode typed : l
-coolkidscode typed : noice
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-coolkidscode typed : !test_f
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-phaqui typed : good morning
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-coolkidscode typed : *** twitch api
-phaqui typed : a nice thing to do
-phaqui typed : print(type(variable))
-phaqui typed : will help you move further into what's wrong
-coolkidscode typed : hm
-coolkidscode typed : tnx for the tip
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-coolkidscode typed : dict type
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-phaqui typed : then the documentation you're looking at is correct
-coolkidscode typed : i need to get the display_name somehow :(
-phaqui typed : it's difficult for me to read that
-phaqui typed : but it's in there
-coolkidscode typed : this should work
-coolkidscode typed : in my head it's working Kappa
-phaqui typed : what the *** at these lyrics... hahaha
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-coolkidscode typed : working
-coolkidscode typed : YES
-coolkidscode typed : *** yea
-coolkidscode typed : it'\s a playlist i'm playing
-coolkidscode typed : from frog leap studios
-coolkidscode typed : !time Phaqui
-coolkidscode typed : ok.. now that i got the last follower i need to make a silly lopp to check for new followers :D
-coolkidscode typed : i'm broke here
-coolkidscode typed : idk how to do that :(
-phaqui typed : you're using the twitch api to request that info?
-coolkidscode typed : yes
-phaqui typed : isn't there a limit to how often you can pull that information?
-coolkidscode typed : api.twitch.tv/kraken
-coolkidscode typed : i can pull it every minute
-coolkidscode typed : or faster
-coolkidscode typed : but i think it updates the last follower every minute or so
-coolkidscode typed : i'm not sure
-coolkidscode typed : basically i want to send a message in chat when i get a new follower
-coolkidscode typed : atm i'm using twitch alerts
-coolkidscode typed : and i want to use twitch alerts and my own bot at the same time
-phaqui typed : I'm not familiar with htat
-phaqui typed : but I saw that there were requests to get followers, maximum 100 per time
-coolkidscode typed : 100 followers?
-phaqui typed : and to get the latest, they had a sort-key you could pass in
-phaqui typed : so, sortby: created, and direction: asc
-coolkidscode typed : ?/follows?limit=1
-coolkidscode typed : i use this
-coolkidscode typed : to get the last follower
-phaqui typed : with maybe even limit set to how many of the latest you want to pull
-phaqui typed : oh, yeah, could be direction: desc
-phaqui typed : I always mix those up
-coolkidscode typed : duck it..
-coolkidscode typed : i'll finish it later
-coolkidscode typed : !views
-coolkidscode typed : tnx for watching Kappa
-coolkidscode typed : cya later
-coolkidscode typed : >bye
-coolkidscode typed : WutFace
-coolkidscode typed : !quit
-coolkidscode typed : >sup
-coolkidscode typed : >just started streaming
-coolkidscode typed : >no one so far
-coolkidscode typed : >no i don't Kappa
-coolkidscode typed : >because you're a bot
-coolkidscode typed : !quit
-coolkidscode typed : !github
-coolkidscode typed : !points
-coolkidscode typed : !time
-coolkidscode typed : ***
-coolkidscode typed : !time
-coolkidscode typed : !quit
-coolkidscode typed : !time
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !time
-coolkidscode typed : !points
-coolkidscode typed : !commands
-coolkidscode typed : !quit
-coolkidscode typed : >hi
-coolkidscode typed : >how are you?
-coolkidscode typed : >stop
-coolkidscode typed : >is trump good?
-coolkidscode typed : >is trump good?
-coolkidscode typed : >jeez just respond
-coolkidscode typed : >lack of responses
-coolkidscode typed : >wth
-coolkidscode typed : Kappa
-coolkidscode typed : !commands
-coolkidscode typed : !views
-coolkidscode typed : PogChamp
-coolkidscode typed : well
-coolkidscode typed : !commands
-coolkidscode typed : !github
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : wth
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : lul :(
-coolkidscode typed : !time
-coolkidscode typed : welp
-coolkidscode typed : test
-coolkidscode typed : wth
-coolkidscode typed : dsad
-coolkidscode typed : lul
-coolkidscode typed : test2
-coolkidscode typed : test3
-coolkidscode typed : !github
-coolkidscode typed : test3
-coolkidscode typed : ..
-coolkidscode typed : lul
-coolkidscode typed : omg
-coolkidscode typed : dasdsa
-coolkidscode typed : pukateiubestebott : @Cptsparklezfan Thank you very much for the follow :D Hope you enjoy the stream.
-coolkidscode typed : YAY
-lazerbeam_wixaurd typed : yooooo
-coolkidscode typed : Keepo
-cptsparklezfan typed : where are you getting the information from? just poking the api every 10 seconds and looking for changes?
-coolkidscode typed : http://pastebin.com/dmBbW89P
-cptsparklezfan typed : LOL
-coolkidscode typed : lul Kappa
-coolkidscode typed : yes
-coolkidscode typed : every 1 sec
-coolkidscode typed : Kappa
-coolkidscode typed : !quit
-coolkidscode typed : test
-cptsparklezfan typed : Bye <3 Kappa
-lazerbeam_wixaurd typed : STREAMCEPTION
-coolkidscode typed : test message 2
-cptsparklezfan typed : Lol nice message
-coolkidscode typed : cya @Cptsparklezfan tnx
-coolkidscode typed : hmm
-coolkidscode typed : !quit
-coolkidscode typed : !commands
-creativestreamer typed : i should go live too so we can have tripleception
-coolkidscode typed : !time
-coolkidscode typed : Kappa
-coolkidscode typed : !time creativestreamer
-creativestreamer typed : all these python code makes me wonder if there are ppl that actually code bots in other langauges
-creativestreamer typed : besides me
-coolkidscode typed : Kappa
-lazerbeam_wixaurd typed : lol not sure
-creativestreamer typed : 02 minutes FeelsBadMan
-lazerbeam_wixaurd typed : python is certainly popular for it
-creativestreamer typed : i just do it in x#
-creativestreamer typed : c#
-coolkidscode typed : !points
-coolkidscode typed : Kappa
-coolkidscode typed : !quit
-coolkidscode typed : test
-coolkidscode typed : test 2
-creativestreamer typed : \o/
-coolkidscode typed : test 3
-coolkidscode typed : >hello there
-coolkidscode typed : >i'm very good Kappa
-coolkidscode typed : 3
-coolkidscode typed : !commands
-lazerbeam_wixaurd typed : !time
-lazerbeam_wixaurd typed : !github
-coolkidscode typed : !points lazerbeam_wixaurd
-coolkidscode typed : Kappa
-coolkidscode typed : 46 points?
-coolkidscode typed : wait a second
-coolkidscode typed : bug found Kappa
-coolkidscode typed : !quit
-coolkidscode typed : test
-coolkidscode typed : !time
-coolkidscode typed : !points lazerbeam_wixaurd
-coolkidscode typed : !github
-lazerbeam_wixaurd typed : !message
-lazerbeam_wixaurd typed : oh haha
-coolkidscode typed : wut
-coolkidscode typed : !test
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : ok
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-creativestreamer typed : Kappa
-coolkidscode typed : Kappa
-coolkidscode typed : wth?
-coolkidscode typed : !quit
-coolkidscode typed : !test
-coolkidscode typed : wth
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !commands
-coolkidscode typed : >how are you?
-coolkidscode typed : >are you gay?
-coolkidscode typed : PogChamp
-creativestreamer typed : !message
-creativestreamer typed : !views
-creativestreamer typed : Kreygasm
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !points
-coolkidscode typed : !points tutasmaster
-coolkidscode typed : Kappa
-tutasmaster typed : Kappa
-coolkidscode typed : !github
-coolkidscode typed : !commands
-coolkidscode typed : Kappa 123
-coolkidscode typed : !quit
-coolkidscode typed : Quit
-tutasmaster typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : tutas
-tutasmaster typed : what?
-coolkidscode typed : un-follow
-coolkidscode typed : and then follow back
-coolkidscode typed : to see something cool
-coolkidscode typed : Kappa
-tutasmaster typed : already unfollowed
-coolkidscode typed : :(
-coolkidscode typed : follow with the bot then
-tutasmaster typed : already followed
-tutasmaster typed : with the normal one
-tutasmaster typed : and the bot
-coolkidscode typed : no u didn't Kappa
-coolkidscode typed : see? Kappa
-tutasmaster typed : i had followed yesterday
-tutasmaster typed : and yes
-tutasmaster typed : i do enjoy coolkidscode
-tutasmaster typed : Keepo
-coolkidscode typed : Keepo
-tutasmaster typed : deal with it haters
-coolkidscode typed : >is tutas a liar?
-coolkidscode typed : >is he a liar?
-coolkidscode typed : PogChamp
-coolkidscode typed : now i just need to add !sfx
-coolkidscode typed : command
-coolkidscode typed : to spend points on
-coolkidscode typed : @TutasMaster dude
-coolkidscode typed : i said that this bot will play on gypsy stream
-coolkidscode typed : and i am keep adding things
-coolkidscode typed : sfx commands and *** Kappa
-tutasmaster typed : do a condition so that it won't do that stuff
-coolkidscode typed : or
-coolkidscode typed : i just remove these stuff
-coolkidscode typed : Kappa
-coolkidscode typed : srsly
-coolkidscode typed : i should try
-tutasmaster typed : dud
-coolkidscode typed : the bot on gypsy channel
-tutasmaster typed : it's your stream bot
-tutasmaster typed : you have 110 views
-coolkidscode typed : ? Kappa
-tutasmaster typed : unless you don't want to keep streaming
-tutasmaster typed : don't delete the bot
-coolkidscode typed : i'll keep streaming
-coolkidscode typed : but other things
-coolkidscode typed : like i want to start this python flask website Kappa
-coolkidscode typed : !joinrandom
-tutasmaster typed : \ FeelsAmazingMan /
-tutasmaster typed : !joinrandom
-coolkidscode typed : !joinrandom
-coolkidscode typed : it's allready done for smashing that game Kappa
-coolkidscode typed : !test_f
-coolkidscode typed : !quit
-coolkidscode typed : !test_f
-coolkidscode typed : !quit
-coolkidscode typed : !lfollow
-coolkidscode typed : !points
-coolkidscode typed : the points system is broken tho
-coolkidscode typed : !points tutasmaster
-coolkidscode typed : Kappa
-tutasmaster typed : it's not
-coolkidscode typed : it is for mods
-coolkidscode typed : i think
-coolkidscode typed : cuz i shouldn't have 73
-coolkidscode typed : OH YEA
-coolkidscode typed : I NEED TO ADD THE !give command
-tutasbot typed : The bot is on!
-tutasmaster typed : fak
-creativestreamer typed : !give
-tutasmaster typed : forgot to remove that
-tutasmaster typed : Keepo
-coolkidscode typed : Kappa
-coolkidscode typed : PogChamp
-coolkidscode typed : what is this?
-tutasbot typed : something...
-tutasbot typed : xD
-tutasmaster typed : lel
-coolkidscode typed : sure Kappa
-tutasmaster typed : let me try something
-coolkidscode typed : !quit
-tutasbot typed : hello
-coolkidscode typed : !points tutasmaster
-coolkidscode typed : !give tutasmaster 10
-coolkidscode typed : !points tutasmaster
-coolkidscode typed : Kappa
-tutasmaster typed : thanks papa puka
-tutasbot typed : turns out admins can't give admin. Kappa
-coolkidscode typed : !quit
-coolkidscode typed : !points tutasmaster
-tutasbot typed : i am becoming sentient. FeelsAmazingMan
-coolkidscode typed : !give tutasmaster 3
-tutasmaster typed : thanks
-coolkidscode typed : !points tutasmaster
-tutasmaster typed : nice
-coolkidscode typed : working now Kappa
-coolkidscode typed : !give
-coolkidscode typed : i should put
-coolkidscode typed : that !give points are taken from your account?
-coolkidscode typed : so everyone can use !give?
-coolkidscode typed : !points tutasbot
-coolkidscode typed : !quit
-coolkidscode typed : !points
-coolkidscode typed : !points
-coolkidscode typed : Kappa
-coolkidscode typed : !give coolkidscode 100
-coolkidscode typed : !points
-tutasmaster typed : op much?
-tutasbot typed : The bot is on!
-coolkidscode typed : tell me tutas
-coolkidscode typed : should i add !give command
-coolkidscode typed : for everyone?
-tutasbot typed : !give tutasmaster 100
-tutasmaster typed : no
-tutasmaster typed : don't do it
-coolkidscode typed : u don't have acces Kappa
-tutasmaster typed : !give tutasmaster 100
-tutasmaster typed : GetRekt
-tutasmaster typed : xD
-tutasmaster typed : do a remove command
-coolkidscode typed : ur admin
-tutasmaster typed : ikr
-coolkidscode typed : i should
-coolkidscode typed : remove you
-coolkidscode typed : Kappa
-tutasmaster typed : i am 2 ways admin
-tutasmaster typed : bot admin
-tutasmaster typed : and pukabot admin
-tutasmaster typed : Keepo
-coolkidscode typed : does the stream quality
-coolkidscode typed : is ok?
-coolkidscode typed : only 18 frames dropped so far Kappa
-tutasmaster typed : for me is great
-tutasmaster typed : max quality is great
-tutasmaster typed : medium is enough to read
-tutasmaster typed : SeemsGood
-tutasbot typed : i love coolkidscode streams! anyone want to love the streams with me? Keepo
-coolkidscode typed : >no
-coolkidscode typed : ***
-coolkidscode typed : i overthink
-coolkidscode typed : and i found so many bugs Kappa
-coolkidscode typed : my mind just stopped working
-coolkidscode typed : wth
-tutasmaster typed : brb gonna take a bath
-coolkidscode typed : ok
-coolkidscode typed : !quit
-coolkidscode typed : !points
-coolkidscode typed : !points tutasbot
-coolkidscode typed : !transfer tutasbot 10
-coolkidscode typed : !points tutasbot
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !points
-coolkidscode typed : !points tutasbot
-coolkidscode typed : !transfer tutasbot 10
-coolkidscode typed : !points
-coolkidscode typed : !points tutasbot
-coolkidscode typed : !transfer tutasbot 300
-coolkidscode typed : !points tutasbot
-coolkidscode typed : WutFace
-coolkidscode typed : !points
-coolkidscode typed : Wtf?
-coolkidscode typed : phphph
-coolkidscode typed : phaha
-coolkidscode typed : !quit
-coolkidscode typed : !quit
-coolkidscode typed : !points
-coolkidscode typed : !points tutasbot
-coolkidscode typed : !transfer tutasbot 120
-coolkidscode typed : !points
-coolkidscode typed : !points tutasbot
-coolkidscode typed : feuh Kappa
-coolkidscode typed : !transfer asdsafas 300
-coolkidscode typed : !views
-coolkidscode typed : PogChamp
-coolkidscode typed : !quit
-coolkidscode typed : !give coolkiscode 100
-coolkidscode typed : !quit
-coolkidscode typed : !give coolkidscode 100
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !time
-coolkidscode typed : !points
-coolkidscode typed : !quit
-tutasmaster typed : back
-tutasmaster typed : would it be bad
-coolkidscode typed : try !transfer command
-coolkidscode typed : and !give
-tutasmaster typed : if i have a birthday guy
-coolkidscode typed : Kappa
-tutasmaster typed : and i give him
-tutasmaster typed : 1 10€ paysafe
-tutasmaster typed : with 5€ in it?
-coolkidscode typed : Kappa
-coolkidscode typed : just tell him that there are only 5$
-coolkidscode typed : !commands
-tutasmaster typed : !transfer tutasbot 100
-tutasmaster typed : !points
-coolkidscode typed : !points tutasbot
-coolkidscode typed : Kappa
-tutasmaster typed : nice
-coolkidscode typed : also
-coolkidscode typed : if you do
-coolkidscode typed : !transfer tutasmaster 999
-coolkidscode typed : Kappa
-coolkidscode typed : i used some complex *** math there
-coolkidscode typed : 3 hours
-coolkidscode typed : and i'm still streaming Kappa
-coolkidscode typed : !views
-coolkidscode typed : !time tutasmaster
-coolkidscode typed : !time
-coolkidscode typed : www.google.com
-coolkidscode typed : http://test.com
-coolkidscode typed : WutFace
-tutasmaster typed : !times
-tutasmaster typed : he can't timeout an admin
-tutasmaster typed : lel
-tutasmaster typed : www.google.com
-tutasmaster typed : ^^working
-coolkidscode typed : !quit
-coolkidscode typed : https://test.com
-coolkidscode typed : what the hell
-tutasmaster typed : you are the streamer
-tutasmaster typed : would it make sense to ban the streamer?
-coolkidscode typed : !quit
-tutasmaster typed : https://test.com
-coolkidscode typed : https://test
-coolkidscode typed : wth
-coolkidscode typed : !quit
-coolkidscode typed : https://test
-coolkidscode typed : https://test.com
-coolkidscode typed : @TutasMaster try now
-coolkidscode typed : a link
-coolkidscode typed : holy ***
-coolkidscode typed : 351 lines of code PogChamp
-tutasmaster typed : https://test.com
-coolkidscode typed : wut wut
-coolkidscode typed : Kappa
-tutasmaster typed : Keepo
-coolkidscode typed : this is still bad
-coolkidscode typed : cuz if someone does
-coolkidscode typed : test.com
-coolkidscode typed : it will not ban
-coolkidscode typed : :)(
-tutasmaster typed : brb dinner
-coolkidscode typed : ok
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !points
-coolkidscode typed : !quit
-coolkidscode typed : !sfx fart
-coolkidscode typed : !points
-tutasmaster typed : back
-coolkidscode typed : wth
-tutasmaster typed : !sfx fart
-coolkidscode typed : the stream was broken Kappa
-coolkidscode typed : how much delay?
-coolkidscode typed : !points
-coolkidscode typed : !sfx fart
-coolkidscode typed : why is there so much delay?
-coolkidscode typed : !sfx fart
-coolkidscode typed : !sfx fart
-coolkidscode typed : !sfx dsadas
-tutasmaster typed : 15 secs
-coolkidscode typed : idk how to make it less
-coolkidscode typed : now the sfx command works
-coolkidscode typed : and it takes 5 points for every sfx
-tutasmaster typed : !points
-tutasmaster typed : halp
-coolkidscode typed : Kappa
-tutasmaster typed : !sfx fart
-tutasmaster typed : !points
-coolkidscode typed : Kappa
-tutasmaster typed : !give tutasmaster 5
-tutasmaster typed : Kappa
-coolkidscode typed : Kappa
-coolkidscode typed : atleast i'm happy
-coolkidscode typed : that i made a bot
-coolkidscode typed : so other people can use it
-coolkidscode typed : i hope Kappa
-coolkidscode typed : !quit
-coolkidscode typed : !sfx joke
-coolkidscode typed : !sfx fart
-tutasmaster typed : !sfx joke
-coolkidscode typed : !points tutasmaster
-coolkidscode typed : do it 2 more times
-coolkidscode typed : to see if it breaks
-tutasmaster typed : !sfx fart
-tutasmaster typed : !sfx joke
-coolkidscode typed : !points tutasmaster
-tutasmaster typed : perfect
-coolkidscode typed : Kappa
-coolkidscode typed : do it again
-tutasmaster typed : !sfx joke
-tutasmaster typed : !points
-coolkidscode typed : the sfx is too long Kappa
-coolkidscode typed : !quit
-coolkidscode typed : try now
-coolkidscode typed : !points tutasmaster
-tutasmaster typed : !sfx fart
-coolkidscode typed : !points
-tutasmaster typed : !sfx joke
-tutasmaster typed : !points
-coolkidscode typed : there is no more joke
-tutasmaster typed : Keepo
-coolkidscode typed : go for fart Kappa
-coolkidscode typed : !quit
-coolkidscode typed : try now tutas Kappa
-coolkidscode typed : !points tutasmaster
-coolkidscode typed : !views
-tutasmaster typed : !sfx joke
-tutasmaster typed : !sfx fart
-tutasmaster typed : !poin ts
-coolkidscode typed : !points tutasmaster
-coolkidscode typed : what the hell?
-tutasmaster typed : !sfx fart
-tutasmaster typed : !points
-coolkidscode typed : stop tutas Kappa
-tutasmaster typed : i had to be sure
-coolkidscode typed : !quit
-coolkidscode typed : try now
-coolkidscode typed : !sfx fart
-coolkidscode typed : oh
-coolkidscode typed : i'm retarded
-coolkidscode typed : Kappa
-coolkidscode typed : !quit
-coolkidscode typed : now should work
-coolkidscode typed : !points
-coolkidscode typed : !give coolkidscode -80
-coolkidscode typed : !points
-coolkidscode typed : !sfx fart
-coolkidscode typed : KJappa
-coolkidscode typed : Kappa
-coolkidscode typed : !give coolkidscode 80
-coolkidscode typed : !sfx fart
-coolkidscode typed : !quit
-coolkidscode typed : !sfx
-coolkidscode typed : !sfx
-coolkidscode typed : !sfx fart
-coolkidscode typed : !sfx FarT
-tutasmaster typed : !sfx list
-coolkidscode typed : Kappa
-tutasmaster typed : o.o
-coolkidscode typed : i should add that
-coolkidscode typed : !quit
-coolkidscode typed : !sfx list
-coolkidscode typed : !sfx
-coolkidscode typed : !sfx fart
-coolkidscode typed : !views
-coolkidscode typed : !commands
-coolkidscode typed : !about
-coolkidscode typed : Kappa
-coolkidscode typed : !lfollow
-coolkidscode typed : !points
-coolkidscode typed : !time
-coolkidscode typed : !time tutasmaster
-tutasmaster typed : Why have you forsaken me?
-tutasmaster typed : Chop sue
-tutasmaster typed : best song evaaaa
-coolkidscode typed : what should i add to the bot?
-coolkidscode typed : i ran out of ideeas
-coolkidscode typed : i think the bot it's done
-tutasmaster typed : song request Keepo
-coolkidscode typed : oh yea
-coolkidscode typed : forgot that
-coolkidscode typed : *** man
-coolkidscode typed : that's a lot of work to do Kapa
-coolkidscode typed : Kappa
-coolkidscode typed : probably will do it tomorrow
-coolkidscode typed : almost
-coolkidscode typed : 400 lines of code
-coolkidscode typed : what the hell Kappa
-coolkidscode typed : !views
-coolkidscode typed : Kappa
-coolkidscode typed : !points
-coolkidscode typed : !commands
-coolkidscode typed : !test
-coolkidscode typed : !points
-coolkidscode typed : !time
-pukateiubeste typed : !quit
